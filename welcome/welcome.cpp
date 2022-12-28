@@ -1,5 +1,6 @@
 #include <iostream>
 #include "welcome.h"
+#include "..\customer-management\customers.h"
 using namespace std;
 
 void welcome::print()
@@ -21,5 +22,7 @@ void welcome::signupOrsignin()
     else if (decision == 2)
     {
         cout<<"You choose for sign up"<<endl;
+        customers user;
+        user.signup();
     }
 }
